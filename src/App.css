@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+#todo-list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.todo {
+  margin-bottom: 10px;
+  background-color: #444444;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.todo-text {
+  display: flex;
+  align-items: center;
+}
+
+.todo-text input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.todo-text input[type="text"],
+.todo-text div {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  background-color: #555555;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.todo-actions {
+  margin-top: 5px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input[type="text"]:focus,
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+input[type="checkbox"]:checked + .todo-text div {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+input[type="checkbox"]:checked + .todo-text input[type="text"],
+input[type="checkbox"]:checked + .todo-text div {
+  background-color: #555555;
+  color: #ffffff;
+}
+
+input[type="checkbox"]:checked + .todo-text input[type="text"]::placeholder,
+input[type="checkbox"]:checked + .todo-text div::placeholder {
+  color: #ffffff;
+}
+
+/* Estilos para el formulario */
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  width: 28%;
+  border-radius: 5px;
+}
