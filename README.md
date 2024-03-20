@@ -31,7 +31,7 @@ Este es un simple proyecto de una lista de tareas desarrollado con React. Permit
 
 ## Autor
 
-- [Luis Fabián Vázquez Rodríguez]([enlace a tu perfil de GitHub](https://github.com/FabianVaz)) - Desarrollador
+- ([Luis Fabián Vázquez Rodríguez](https://github.com/FabianVaz)) - Desarrollador
 
 ## Licencia
 
